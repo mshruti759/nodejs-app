@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cloud Learning Hub | Learn Practice Deploy</title>
+    <meta name="description" content="A personal AWS and DevOps learning portal with notes, labs, projects, and deployment workflow.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#home">
+          <span class="brand-mark">CL</span>
+          <span>Cloud Learning Hub</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#aws">AWS</a></li>
+            <li class="nav-item"><a class="nav-link" href="#devops">DevOps</a></li>
+            <li class="nav-item"><a class="nav-link" href="#commands">Linux</a></li>
+            <li class="nav-item"><a class="nav-link" href="#labs">Labs</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            <li class="nav-item ms-lg-2">
+              <button class="icon-button" id="themeToggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">◐</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero" id="home">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <p class="eyebrow">AWS and DevOps portfolio</p>
+            <h1>Cloud Learning Hub</h1>
+            <p class="tagline">Learn • Practice • Deploy</p>
+            <p class="hero-copy">A personal learning portal for documenting AWS notes, Linux commands, DevOps labs, real projects, and the full deployment journey from laptop to live HTTPS website.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary btn-lg" href="#aws">Start Learning</a>
+              <a class="btn btn-outline-light btn-lg" href="#projects">View Projects</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="terminal-card" aria-label="Deployment flow preview">
+              <div class="terminal-top">
+                <span></span><span></span><span></span>
+                <strong>deploy.sh</strong>
+              </div>
+              <pre><code>$ git push origin main
+$ ssh ec2-user@cloud-lab
+$ sudo dnf install nginx -y
+$ sudo systemctl enable --now nginx
+$ sudo certbot --nginx -d example.com
+
+Live: https://cloudlearninghub.com</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section intro-band">
+        <div class="container">
+          <div class="row g-4 align-items-center">
+            <div class="col-lg-5">
+              <h2>Why I Chose Cloud Computing</h2>
+              <p>Cloud computing lets me turn theory into working systems. I can launch servers, host websites, secure domains, monitor traffic, and understand how real internet applications run.</p>
+            </div>
+            <div class="col-lg-7">
+              <div class="stats-grid">
+                <div><strong data-count="12">0</strong><span>Learning notes</span></div>
+                <div><strong data-count="10">0</strong><span>Practical labs</span></div>
+                <div><strong data-count="6">0</strong><span>Projects</span></div>
+                <div><strong data-count="7">0</strong><span>Day roadmap</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">About me</p>
+            <h2>Building cloud skills one lab at a time</h2>
+          </div>
+          <div class="row g-4 align-items-stretch">
+            <div class="col-lg-4">
+              <div class="profile-panel">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80" alt="Laptop showing cloud learning workspace">
+                <h3>Your Name</h3>
+                <p>Aspiring Cloud and DevOps Engineer focused on AWS, Linux, automation, and production-ready web hosting.</p>
+                <a class="btn btn-secondary w-100" href="#" download>Download Resume</a>
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="info-grid">
+                <article>
+                  <h3>Education</h3>
+                  <p>Add your degree, college, certifications, and current training program here.</p>
+                </article>
+                <article>
+                  <h3>Career Goal</h3>
+                  <p>Become a Cloud Support Engineer or Junior DevOps Engineer with hands-on AWS deployment experience.</p>
+                </article>
+                <article>
+                  <h3>Learning Journey</h3>
+                  <p>Practicing EC2, IAM, S3, Linux, NGINX, GitHub, Docker basics, and HTTPS deployment.</p>
+                </article>
+                <article>
+                  <h3>Skills Overview</h3>
+                  <div class="skill-tags">
+                    <span>Linux</span><span>AWS EC2</span><span>NGINX</span><span>Git</span><span>Docker</span><span>HTTPS</span>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section surface" id="aws">
+        <div class="container">
+          <div class="section-heading with-search">
+            <div>
+              <p class="eyebrow">AWS learning</p>
+              <h2>Cloud services notebook</h2>
+            </div>
+            <input class="form-control search-box" id="siteSearch" type="search" placeholder="Search notes, commands, labs...">
+          </div>
+          <div class="card-grid searchable-grid">
+            <article class="learning-card" data-search="ec2 compute virtual server ssh nginx">
+              <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=80" alt="Server racks">
+              <h3>EC2</h3>
+              <p><strong>What:</strong> Virtual servers in AWS.</p>
+              <p><strong>Use:</strong> Host websites, apps, and cloud labs.</p>
+              <p><strong>Example:</strong> Launch Amazon Linux, install NGINX, deploy static files.</p>
+              <code>ssh -i key.pem ec2-user@PUBLIC_IP</code>
+            </article>
+            <article class="learning-card" data-search="iam users roles policies access security">
+              <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=900&q=80" alt="Security lock on screen">
+              <h3>IAM</h3>
+              <p><strong>What:</strong> Identity and access management.</p>
+              <p><strong>Use:</strong> Control users, groups, roles, and permissions.</p>
+              <p><strong>Example:</strong> Create least-privilege S3 access for a user.</p>
+              <code>aws iam list-users</code>
+            </article>
+            <article class="learning-card" data-search="s3 object storage bucket static hosting">
+              <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=900&q=80" alt="Data center storage">
+              <h3>S3</h3>
+              <p><strong>What:</strong> Object storage for files.</p>
+              <p><strong>Use:</strong> Store images, backups, logs, and static assets.</p>
+              <p><strong>Example:</strong> Upload website screenshots and notes.</p>
+              <code>aws s3 cp notes.pdf s3://my-bucket/</code>
+            </article>
+            <article class="learning-card" data-search="vpc network subnet route internet gateway">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80" alt="Network dashboard">
+              <h3>VPC</h3>
+              <p><strong>What:</strong> Private cloud network.</p>
+              <p><strong>Use:</strong> Organize subnets, routing, firewalls, and IP ranges.</p>
+              <p><strong>Example:</strong> Place EC2 in a public subnet with a security group.</p>
+              <code>10.0.0.0/16</code>
+            </article>
+            <article class="learning-card" data-search="route 53 domain dns hosting">
+              <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=900&q=80" alt="Global network lights">
+              <h3>Route 53</h3>
+              <p><strong>What:</strong> DNS and domain routing service.</p>
+              <p><strong>Use:</strong> Connect a domain name to an EC2 public IP.</p>
+              <p><strong>Example:</strong> Create an A record for your portfolio domain.</p>
+              <code>example.com → EC2_PUBLIC_IP</code>
+            </article>
+            <article class="learning-card" data-search="cloudwatch monitoring logs alarms metrics">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80" alt="Metrics dashboard">
+              <h3>CloudWatch</h3>
+              <p><strong>What:</strong> Monitoring, logs, metrics, and alarms.</p>
+              <p><strong>Use:</strong> Track CPU, status checks, and application logs.</p>
+              <p><strong>Example:</strong> Create an alarm for high EC2 CPU usage.</p>
+              <code>aws cloudwatch list-metrics</code>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="devops">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">DevOps learning</p>
+            <h2>Tools I practice</h2>
+          </div>
+          <div class="topic-row">
+            <article><h3>Linux</h3><p>Files, permissions, users, services, SSH, package management, and logs.</p></article>
+            <article><h3>Git</h3><p>Version control with branches, commits, remotes, merges, and rollback basics.</p></article>
+            <article><h3>GitHub</h3><p>Repository hosting, README writing, project screenshots, and deployment flow.</p></article>
+            <article><h3>Docker</h3><p>Images, containers, Dockerfiles, ports, and basic NGINX container practice.</p></article>
+            <article><h3>NGINX</h3><p>Static hosting, server blocks, reverse proxy basics, logs, and service control.</p></article>
+            <article><h3>Jenkins</h3><p>Basic CI idea, jobs, build triggers, and pipeline learning notes.</p></article>
+            <article><h3>Bash</h3><p>Simple automation scripts for backup, deployment, and status checks.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section surface" id="commands">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Linux commands</p>
+            <h2>Command library</h2>
+          </div>
+          <div class="accordion command-list" id="commandAccordion">
+            <div class="accordion-item">
+              <h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#fileCommands">File management</button></h3>
+              <div id="fileCommands" class="accordion-collapse collapse show" data-bs-parent="#commandAccordion">
+                <div class="accordion-body command-grid">
+                  <div><code>ls -la</code><span>List files with hidden items and permissions.</span></div>
+                  <div><code>cp index.html /var/www/html/</code><span>Copy website file to NGINX root.</span></div>
+                  <div><code>mkdir cloud-notes</code><span>Create a project folder.</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#networkCommands">Networking and SSH</button></h3>
+              <div id="networkCommands" class="accordion-collapse collapse" data-bs-parent="#commandAccordion">
+                <div class="accordion-body command-grid">
+                  <div><code>ssh -i key.pem ec2-user@ip</code><span>Connect to an EC2 instance.</span></div>
+                  <div><code>scp -i key.pem -r site/ ec2-user@ip:/tmp</code><span>Upload a folder to EC2.</span></div>
+                  <div><code>curl -I https://domain.com</code><span>Check HTTP headers and HTTPS status.</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#adminCommands">Permissions, users, and processes</button></h3>
+              <div id="adminCommands" class="accordion-collapse collapse" data-bs-parent="#commandAccordion">
+                <div class="accordion-body command-grid">
+                  <div><code>chmod 644 index.html</code><span>Set safe read permissions for a web file.</span></div>
+                  <div><code>sudo systemctl status nginx</code><span>Check whether NGINX is running.</span></div>
+                  <div><code>ps aux | grep nginx</code><span>Find active NGINX worker processes.</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="labs">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Practical labs</p>
+            <h2>Hands-on deployment path</h2>
+          </div>
+          <div class="timeline">
+            <div><span>01</span><h3>Launch EC2</h3><p>Create an Amazon Linux instance and allow HTTP, HTTPS, and SSH.</p></div>
+            <div><span>02</span><h3>Connect with SSH</h3><p>Use a private key to log in and update packages.</p></div>
+            <div><span>03</span><h3>Install NGINX</h3><p>Enable the service and place your site in the web root.</p></div>
+            <div><span>04</span><h3>Connect Domain</h3><p>Create DNS records in Route 53 or your registrar.</p></div>
+            <div><span>05</span><h3>Enable HTTPS</h3><p>Install Certbot and apply an SSL certificate.</p></div>
+            <div><span>06</span><h3>Automate Updates</h3><p>Use GitHub, SCP, or a simple deploy script to publish changes.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section surface" id="projects">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Projects</p>
+            <h2>Showcase work</h2>
+          </div>
+          <div class="project-grid">
+            <article>
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80" alt="Portfolio dashboard">
+              <h3>Personal Portfolio</h3>
+              <p>Static portfolio hosted on EC2 with NGINX, domain, and HTTPS.</p>
+              <span>HTML</span><span>CSS</span><span>AWS EC2</span>
+            </article>
+            <article>
+              <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=900&q=80" alt="Hospital website concept">
+              <h3>Hospital Website</h3>
+              <p>Responsive multi-section website with services, doctors, and contact form.</p>
+              <span>Bootstrap</span><span>JavaScript</span>
+            </article>
+            <article>
+              <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=900&q=80" alt="Restaurant interior">
+              <h3>Restaurant Website</h3>
+              <p>Menu, gallery, reservation form, and mobile-first layout practice.</p>
+              <span>HTML</span><span>CSS</span>
+            </article>
+            <article>
+              <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=900&q=80" alt="Code editor">
+              <h3>NGINX Configuration</h3>
+              <p>Server block, static root, logs, firewall, and SSL notes.</p>
+              <span>NGINX</span><span>Linux</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="blog">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Blog</p>
+            <h2>Short tutorials</h2>
+          </div>
+          <div class="blog-list">
+            <article><time>Day 1</time><h3>What is AWS?</h3><p>A beginner explanation of cloud computing, regions, services, and billing awareness.</p><a href="#">Read draft</a></article>
+            <article><time>Day 2</time><h3>How to launch an EC2 instance</h3><p>Step-by-step guide with screenshots, key pair setup, and security group notes.</p><a href="#">Read draft</a></article>
+            <article><time>Day 3</time><h3>How to install NGINX</h3><p>Install, start, enable, test, and troubleshoot NGINX on Amazon Linux.</p><a href="#">Read draft</a></article>
+            <article><time>Day 4</time><h3>Linux commands for beginners</h3><p>The commands I use most while deploying and debugging a website.</p><a href="#">Read draft</a></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section surface" id="roadmap">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">7-day roadmap</p>
+            <h2>Beginner development plan</h2>
+          </div>
+          <div class="roadmap-grid">
+            <div><strong>Day 1</strong><span>Create Home and About pages</span></div>
+            <div><strong>Day 2</strong><span>Add AWS and DevOps learning pages</span></div>
+            <div><strong>Day 3</strong><span>Add Linux commands and practical labs</span></div>
+            <div><strong>Day 4</strong><span>Create Projects and Blog pages</span></div>
+            <div><strong>Day 5</strong><span>Build Contact page and responsive design</span></div>
+            <div><strong>Day 6</strong><span>Deploy on AWS EC2 with NGINX</span></div>
+            <div><strong>Day 7</strong><span>Connect domain and enable HTTPS</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="faq">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">FAQ</p>
+            <h2>Common beginner questions</h2>
+          </div>
+          <div class="faq-grid">
+            <details open><summary>Can I host this on EC2?</summary><p>Yes. Upload the files to `/usr/share/nginx/html` or `/var/www/html` depending on your NGINX configuration.</p></details>
+            <details><summary>Do I need a domain?</summary><p>No for testing. Use the EC2 public IP first, then add a domain when the site is ready.</p></details>
+            <details><summary>How do I add screenshots?</summary><p>Replace the image links in each card with your own lab screenshots after every practical exercise.</p></details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-lg-5">
+              <p class="eyebrow">Contact</p>
+              <h2>Let’s connect</h2>
+              <p>Add your email, GitHub, LinkedIn, and WhatsApp link here. The form is ready for a form backend such as Formspree, Netlify Forms, or your own API.</p>
+              <div class="contact-links">
+                <a href="mailto:you@example.com">you@example.com</a>
+                <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <form class="contact-form">
+                <div class="row g-3">
+                  <div class="col-md-6"><label>Name<input class="form-control" type="text" placeholder="Your name"></label></div>
+                  <div class="col-md-6"><label>Email<input class="form-control" type="email" placeholder="you@example.com"></label></div>
+                  <div class="col-12"><label>Message<textarea class="form-control" rows="5" placeholder="Write your message"></textarea></label></div>
+                  <div class="col-12"><button class="btn btn-primary" type="submit">Send Message</button></div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">↑</button>
+
+    <footer>
+      <div class="container">
+        <p>cloud learning hub</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
